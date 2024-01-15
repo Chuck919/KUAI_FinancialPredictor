@@ -5,9 +5,9 @@ Uses AI sentiment analysis and market data to predict whether you should buy or 
 
 ## 1. Download Requirements
   First download the requirements.txt file. You can do that by downloading the file and running     the code here:
-'''
+```
 pip install -r requirements.txt
-'''
+```
   
 ## 2. Train the Models
   There are 2 models, Bernoulli Naive Bayes (BNB) and Linear Support Vector Classification         (LinearSVC) models. I have attached an explanation of each below. There already exists a trained version of both, using the Project_Data.csv (saved as BNBmodel.pkl and SVCmodel.pkl) but you can train them again if you would like. You can do this by updating what data you would like in the Project_Data.csv file following the same format (or just simply use that file). The models will then be saved to their respective files as well as the vectorizer in the tfidf_vectorizer.joblib file. Typically, both models have a precision rate of 80-85%.
@@ -23,4 +23,5 @@ pip install -r requirements.txt
 
 ## 4. Placing Orders
   After the predictions.csv file has been created (or you can use the existing predictions.csv file), you can then run the TradingBot.py file, which will then only take the predictions that both the BNB and SVC model agree on and determine whether the majority of the sentiment is positive or negative and return a BUY or SELL signal depending on the sentiment. You can also expand on the code at the very bottom of the file which uses the Binance-Python library to automatically create buy and sell orders on your behalf. However, because the goal of this project was not to create a trading bot, that functionality is very basic.
-  
+
+#### This project was created by @aliceKuang12 and the KU AI Financial Predictor Team
