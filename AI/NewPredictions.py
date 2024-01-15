@@ -8,7 +8,7 @@ from Model import cleaning_stopwords, cleaning_punctuations, cleaning_repeating_
 conn = http.client.HTTPConnection('api.mediastack.com')
 
 params = urllib.parse.urlencode({
-    'access_key': '92326870a786707523889fb694ad68e2', #You will need your own access key
+    'access_key': '', #You will need your own access key
     'categories': '-general, business',
     'countries': 'us',
     'languages': 'en',
