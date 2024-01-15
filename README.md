@@ -12,10 +12,10 @@ pip install -r requirements.txt
 ## 2. Train the Models
   There are 2 models, Bernoulli Naive Bayes (BNB) and Linear Support Vector Classification         (LinearSVC) models. I have attached an explanation of each below. There already exists a trained version of both, using the Project_Data.csv (saved as BNBmodel.pkl and SVCmodel.pkl) but you can train them again if you would like. You can do this by updating what data you would like in the Project_Data.csv file following the same format (or just simply use that file). The models will then be saved to their respective files as well as the vectorizer in the tfidf_vectorizer.joblib file. Typically, both models have a precision rate of 80-85%.
   
-# Bernoulli Naive Bayes (BNB): 
+### Bernoulli Naive Bayes (BNB): 
   Bernoulli Naive Bayes is a classification algorithm commonly used in text analysis, making it a valuable tool for tasks like sentiment analysis. It operates on the principle of Bayes' theorem, leveraging the assumption that features are conditionally independent given the class. In the context of text, it's particularly effective when dealing with binary features, like whether specific words are present or absent. This simplicity and efficiency make BNB well-suited for scenarios where the goal is to categorize documents into different classes based on the occurrence of specific features.
 
-# Linear Support Vector Classification (LinearSVC): 
+### Linear Support Vector Classification (LinearSVC): 
   Linear Support Vector Classification is a powerful algorithm used for linear classification problems, including text classification. It works by finding the optimal hyperplane that separates different classes in a high-dimensional space. In simpler terms, it's adept at drawing a line (or hyperplane) in the data to distinguish between categories. For text classification tasks, where the goal is to categorize documents, LinearSVC excels in scenarios where the data can be effectively separated by a straight line. Its versatility and efficiency make it a popular choice, especially when dealing with large-scale text datasets common in natural language processing projects.
 
 ## 3. Make New Predictions
